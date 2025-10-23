@@ -44,6 +44,30 @@
             padding: 40px 20px;
         }
         
+        
+
+           
+        .esporte{
+             background: rgba(85, 84, 84, 0.5); /* preto com 50% de transparência */
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  text-align: center;
+  backdrop-filter: blur(1px); /* efeito de vidro fosco */
+  box-shadow: 0 4px 20px rgba(167, 166, 166, 0.3);
+        }
+
+        .esporte2{
+ background: rgba(85, 84, 84, 0.5); /* preto com 50% de transparência */
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  text-align: center;
+  backdrop-filter: blur(1px); /* efeito de vidro fosco */
+  box-shadow: 0 4px 20px rgba(167, 166, 166, 0.3)
+        }
         section {
             padding: 60px 0;
         }
@@ -51,14 +75,20 @@
         /* 1. Seção Principal (Hero) */
         .hero {
             
-           background: url(image/jogo.jpeg) no-repeat center center/cover;
+           background: url(image/jogo.jpeg) no-repeat center center/cover rgba(255,255,255,0.3);;
+           
             background-size: cover;
             background-position: center;
           width: 100%;
           height: auto;
-            color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+            color:#000;
             text-align: center;
             padding: 150px 20px;
+            backdrop-filter: blur(0px);
+            border-radius: 20px;
         }
 
         .hero img.logo {
@@ -278,8 +308,8 @@
     <header class="hero">
         <div class="container">
             
-            <h1>Esporte Clube Social Pelezinho: Formando Campeões para o Campo e para a Vida.</h1>
-            <p>Mais que um time, uma família. Desenvolvemos o talento de jovens atletas com disciplina, paixão e respeito.</p>
+            <h1 class="esporte">Esporte Clube Social Pelezinho: Formando Campeões para o Campo e para a Vida.</h1>
+            <p class="esporte2">Mais que um time, uma família. Desenvolvemos o talento de jovens atletas com disciplina, paixão e respeito.</p>
             <a href="#cadastro" class="cta-button">QUERO FAZER PARTE DO TIME!</a>
         </div>
     </header>
