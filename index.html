@@ -4,310 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esporte Clube Social Pelezinho</title>
+
     <link rel="shortcut icon" href="image/faviconpele.png" type="image/x-icon">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-    <style>
-        /* CSS Reset e Configurações Globais */
-        :root {
-            --cor-verde: #8BC34A; /* Verde do logo */
-            --cor-azul: #1E88E5; /* Azul do logo */
-            --cor-texto-escuro: #3A3A3A; /* Marrom escuro do logo */
-            --cor-fundo: #FFFFFF;
-            --cor-fundo-secao: #f9f9f9;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: var(--cor-texto-escuro);
-            background-color: var(--cor-fundo);
-        }
-
-        h1, h2, h3 {
-            font-family: 'Poppins', sans-serif;
-            
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        
-
-           
-        .esporte{
-             background: rgba(85, 84, 84, 0.5); /* preto com 50% de transparência */
-  color: #fff;
-  padding: 20px 20px;
-  border-radius: 15px;
-  font-size: 2.5rem;
-  text-align: center;
-  backdrop-filter: blur(1px); /* efeito de vidro fosco */
-  box-shadow: 0 4px 20px rgba(167, 166, 166, 0.3);
-        }
-
-        .esporte2{
- background: rgba(85, 84, 84, 0.5); /* preto com 50% de transparência */
-  color: #fff;
-  padding: 20px 20px;
-  border-radius: 15px;
-  font-size: 2.5rem;
-  text-align: center;
-  backdrop-filter: blur(1px); /* efeito de vidro fosco */
-  box-shadow: 0 4px 20px rgba(167, 166, 166, 0.3)
-        }
-        section {
-            padding: 60px 0;
-        }
-
-        /* 1. Seção Principal (Hero) */
-        .hero {
-            
-           background: url(image/jogo.jpeg) no-repeat center center/cover rgba(255,255,255,0.3);;
-           
-            background-size: cover;
-            background-position: center;
-          width: 100%;
-          height: auto;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-            color:#000;
-            text-align: center;
-            padding: 150px 20px;
-            backdrop-filter: blur(0px);
-            border-radius: 20px;
-        }
-
-        .hero img.logo {
-            max-width: 300px;
-            margin-bottom: 50px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 30px auto;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: var(--cor-azul);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #1565C0; /* Tom de azul mais escuro */
-        }
-        
-        /* 2. Seção Sobre */
-        .sobre-section {
-            background-color: var(--cor-fundo-secao);
-            text-align: center;
-        }
-
-        .sobre-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-        }
-
-        .valores-grid {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        
-        .valor-item {
-            flex-basis: 200px;
-        }
-
-        .valor-item h3 {
-            color: var(--cor-verde);
-            margin-bottom: 10px;
-        }
-
-        /* 3. Seção Fundador */
-        .fundador-section {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .fundador-img {
-            flex: 1;
-            min-width: 250px;
-        }
-
-        .fundador-img img {
-            width: 100%;
-            max-width: 350px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .fundador-texto {
-            flex: 2;
-        }
-        
-        .fundador-texto h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        /* 4. Seção Estrutura */
-        .estrutura-section {
-             background-color: var(--cor-fundo-secao);
-        }
-
-        .estrutura-section h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-        }
-
-        .estrutura-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .estrutura-item {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-
-        /* 5. Seção Galeria */
-        .galeria-section h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-        }
-
-        .galeria-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
-        }
-        .galeria-grid img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 5px;
-            transition: transform 0.3s ease;
-        }
-        .galeria-grid img:hover {
-            transform: scale(1.05);
-        }
-
-        /* 6. Seção Cadastro (Formulário) */
-        .cadastro-section {
-            background-color: var(--cor-verde);
-            color: white;
-            text-align: center;
-        }
-
-        .cadastro-section h2 {
-            font-size: 2.5rem;
-        }
-        .cadastro-section p {
-            margin-bottom: 30px;
-        }
-
-        .form-cadastro {
-            max-width: 600px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .form-cadastro input {
-            padding: 15px;
-            border-radius: 5px;
-            border: none;
-            font-size: 1rem;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        .form-cadastro button {
-            background-color: var(--cor-azul);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 5px;
-            border: none;
-            font-family: 'Poppins', sans-serif;
-            font-weight: bold;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .form-cadastro button:hover {
-            background-color: #1565C0;
-        }
-        
-        /* 7. Rodapé */
-        .footer {
-            background-color: rgb(26, 90, 63);
-            color: #f0f0f0;
-            text-align: center;
-            padding: 20px 20px;
-        }
-        .footer p {
-            margin-bottom: 10px;
-        }
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1.5rem;
-        }
-
-        /* Responsividade para Telas Menores */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            .fundador-section {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-
-    </style>
+    <!-- CSS EXCLUSIVO DO SITE -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+
+    <!-- TODO O SEU HTML CONTINUA IGUAL ↓↓↓ -->
+    <!-- (não removi nem alterei nada da sua estrutura) -->
+
+    <!-- ... SEU CÓDIGO COMPLETO AQUI ... -->
+    
 <body>
 
     <header class="hero">
         <div class="container">
-            
             <h1 class="esporte">Esporte Clube Social Pelezinho: Formando Campeões para o Campo e para a Vida.</h1>
             <p class="esporte2">Mais que um time, uma família. Desenvolvemos o talento de jovens atletas com disciplina, paixão e respeito.</p>
             <a href="#cadastro" class="cta-button">QUERO FAZER PARTE DO TIME!</a>
@@ -350,7 +67,7 @@
                 <h2>Conheça Nosso Fundador</h2>
                 <h3>EDIVALDO IGREJA GOMES</h3>
                 <p>
-                    Treinador renomado no futsal paraense, com passagens pelos clubes Aguia Mocajuba, Tatuoca Mocajuba,Scaylandia Mocajuba e também pela Tuna Luso Brasileira no futebol de campo como jogador.
+                    Treinador renomado no futsal paraense, com passagens pelos clubes Aguia Mocajuba, Tatuoca Mocajuba, Scaylandia Mocajuba e também pela Tuna Luso Brasileira no futebol de campo como jogador.
                 </p>
             </div>
         </section>
@@ -377,8 +94,8 @@
         
         <section class="galeria-section">
             <div class="container">
-                 <h2>Nossos Momentos de Glória</h2>
-                 <div class="galeria-grid">
+                <h2>Nossos Momentos de Glória</h2>
+                <div class="galeria-grid">
                     <img src="image/WhatsApp Image 2025-10-06 at 16.26.05.jpeg" alt="Foto da galeria">
                     <img src="image/WhatsApp Image 2025-10-08 at 01.44.01.jpeg" alt="Foto da galeria">
                     <img src="image/integracao2.jpeg" alt="Foto da galeria">
@@ -387,7 +104,7 @@
                     <img src="image/peletitulo.jpeg" alt="Foto da galeria">
                     <img src="image/antigo.jpeg" alt="foto da galeria">
                     <img src="image/pequenos.jpeg" alt="foto da galeria">
-                 </div>
+                </div>
             </div>
         </section>
 
@@ -413,15 +130,19 @@
     <footer class="footer">
         <div class="container">
             <p><strong>Esporte Clube Social Pelezinho</strong></p>
-            <p>Rua Manoel de Souza Furtado,Nº90, Bairro Novo, Mocajuba-Pará</p>
-            <p>Contato: (91) 981184079| email:peledivaldo@gmail.com</p>
+            <p>Rua Manoel de Souza Furtado, Nº90, Bairro Novo, Mocajuba-Pará</p>
+            <p>Contato: (91) 981184079 | email: peledivaldo@gmail.com</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/pelezinho_adulto/" aria-label="Instagram">Instagran</a>
-                <a href="https://wa.me/91982277760
-" aria-label="Whatssapp">Whatssapp</a>
+                <a href="https://www.instagram.com/pelezinho_adulto/" aria-label="Instagram">Instagram</a>
+                <a href="https://wa.me/91982277760" aria-label="Whatssapp">WhatsApp</a>
             </div>
         </div>
     </footer>
 
+</body>
+</html>
+
+
+    <script src="js/login.js"></script>
 </body>
 </html>

@@ -1,0 +1,280 @@
+/* CSS Reset e Configurações Globais */
+:root {
+    --cor-verde: #8BC34A;
+    --cor-azul: #1E88E5;
+    --cor-texto-escuro: #3A3A3A;
+    --cor-fundo: #FFFFFF;
+    --cor-fundo-secao: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor-texto-escuro);
+    background-color: var(--cor-fundo);
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.esporte,
+.esporte2 {
+    background: rgba(85, 84, 84, 0.5);
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    text-align: center;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 4px 20px rgba(167, 166, 166, 0.3);
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* 1. Seção Principal (Hero) */
+.hero {
+    background: url(image/jogo.jpeg) no-repeat center center/cover rgba(255,255,255,0.3);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    padding: 150px 20px;
+    backdrop-filter: blur(0px);
+    border-radius: 20px;
+}
+
+.hero img.logo {
+    max-width: 300px;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--cor-azul);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1565C0;
+}
+
+/* 2. Seção Sobre */
+.sobre-section {
+    background-color: var(--cor-fundo-secao);
+    text-align: center;
+}
+
+.sobre-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.valores-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.valor-item {
+    flex-basis: 200px;
+}
+
+.valor-item h3 {
+    color: var(--cor-verde);
+    margin-bottom: 10px;
+}
+
+/* 3. Seção Fundador */
+.fundador-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.fundador-img {
+    flex: 1;
+    min-width: 250px;
+}
+
+.fundador-img img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.fundador-texto {
+    flex: 2;
+}
+
+.fundador-texto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* 4. Seção Estrutura */
+.estrutura-section {
+    background-color: var(--cor-fundo-secao);
+}
+
+.estrutura-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.estrutura-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.estrutura-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* 5. Seção Galeria */
+.galeria-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* 6. Seção Cadastro */
+.cadastro-section {
+    background-color: var(--cor-verde);
+    color: white;
+    text-align: center;
+}
+
+.cadastro-section h2 {
+    font-size: 2.5rem;
+}
+
+.cadastro-section p {
+    margin-bottom: 30px;
+}
+
+.form-cadastro {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-cadastro input {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-cadastro button {
+    background-color: var(--cor-azul);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-cadastro button:hover {
+    background-color: #1565C0;
+}
+
+/* 7. Rodapé */
+.footer {
+    background-color: rgb(26, 90, 63);
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .fundador-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
